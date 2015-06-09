@@ -1,0 +1,2 @@
+module PreferredAddressHelper
+end

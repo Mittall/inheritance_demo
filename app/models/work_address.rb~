@@ -1,0 +1,9 @@
+class WorkAddress < Address
+	#validates_presence_of :state
+
+	def set_type
+		self.type = "work address"
+  end
+
+
+end

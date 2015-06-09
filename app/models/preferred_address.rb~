@@ -1,0 +1,12 @@
+class PreferredAddress < Address
+	def set_type
+		self.type = "preferred address"
+  end
+end
+
+
+class HomeAddress < Address
+	def set_type
+		self.type = "home address"
+  end
+end

@@ -1,0 +1,4 @@
+class PreferredAddressController < AddressesController
+ 
+
+end

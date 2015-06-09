@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InheritanceDemo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!--
+	<%=link_to "Home Address", addresses_path(:type => :home_address) %>|
+  <%=link_to "Preferred Address", addresses_path(:type => :preferred_address) %>|
+  <%=link_to "Work Address", addresses_path(:type=> :work_address) %>
+-->
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Home Address:</strong>
+  <%= @home %>
+</p>
+
+<p>
+  <strong>Preferred Address:</strong>
+  <%= @preferred %>
+</p>
+
+<p>
+  <strong>Work Address:</strong>
+  <%= @work %>
+</p>
+
+<p>
+<%= @all.inspect %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+<br><br>
+
+<h3>Add your address</h3>Click on link to add address<br>
+<!--<%=link_to "Home Address", address_type_path(:type => "home_address"), {:style=>'color:green;', :class => "css_class"} %><b> | </b>
+<%=link_to "Preferred Address(Optional)", address_type_path(:type => "preferred_address"), {:style=>'color:green;', :class => "css_class"}  %><b> | </b>
+<%=link_to "Work Address(Optional)", address_type_path(:type=> "work_address"), {:style=>'color:green;', :class => "css_class"}  %>-->
+
+<%= link_to "Home address", haddress_path, {:style=>'color:green;', :class => "css_class"} %><b> | </b>
+<%= link_to "Preferred address", paddress_path, {:style=>'color:green;', :class => "css_class"} %><b> | </b>
+<%= link_to "Work address", waddress_path, {:style=>'color:green;', :class => "css_class"} %>
